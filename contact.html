@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact Us</title>
+  <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="available.html">Available Listings</a></li>
+            <li><a href="property1.html">Property 1</a></li>
+            <li><a href="property2.html">Property 2</a></li>
+            <li><a href="property3.html">Property 3</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="site_credits.html">Site Map & Credits</a></li>
+          </ul>
+        </nav>
+      </header> 
+      <main>
+    <section class="contact-form">
+      <h1>Contact Us</h1>
+      <form id="contact-form" onsubmit="return validateForm()">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+        
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="property-type">Property Type:</label>
+        <select id="property-type" name="property-type">
+          <option value="house">House</option>
+          <option value="condominium">Condominium</option>
+        </select>
+        
+        <label for="bedrooms">Number of Bedrooms:</label>
+        <input type="number" id="bedrooms" name="bedrooms" required>
+        
+        <label for="bathrooms">Number of Bathrooms:</label>
+        <input type="number" id="bathrooms" name="bathrooms" required>
+        
+        <label for="price-range">Price Range:</label>
+        <input type="text" id="price-range" name="price-range" required>
+        
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments"></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 John Doe</p>
+  </footer>
+</body>
+</html>
